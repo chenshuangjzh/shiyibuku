@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="party.chenshuangjzh.dao.PictureDao">
+
+    <select id="findAll" resultType="list" resultMap="pictureMap">
+        SELECT * FROM picture
+    </select>
+
+    <resultMap id="pictureMap" type="Picture">
+        <id property="id" column="id"/>
+        <result property="pictureName" column="picture_name"/>
+        <result property="uploadTime" column="upload_time"/>
+        <result property="size" column="size"/>
+        <result property="width" column="width"/>
+        <result property="height" column="height"/>
+        <result property="hash" column="hash"/>
+        <result property="mimeType" column="mime_type"/>
+    </resultMap>
+
+    <select id="findByName" parameterType="string" resultMap="pictureMap" resultType="Picture">
+        SELECT * FROM picture WHERE picture_name = #{name}
+    </select>
+
+    <select id="search" parameterType="string" resultMap="pictureMap" resultType="list">
+        SELECT * FROM picture WHERE picture_name LIKE CONCAT(CONCAT('%', #{q}), '%');
+    </select>
+</mapper>

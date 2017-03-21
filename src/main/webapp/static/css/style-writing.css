@@ -1,0 +1,46 @@
+body{
+    background-color: #E2E2E2;
+}
+.articleContainer{
+    margin-top:80px;
+    border-radius:3px;
+    background-color: #FFF;
+}
+.article{
+    height:69px;
+    margin-bottom: 1px;
+    line-height: 69px;
+}
+.articleLine {
+    height: 1px;
+    width:555px;
+    background-color: #E2E2E2;
+}
+.bottomInfo{
+    height:20px;
+    width:100%;
+    opacity:0;
+}
+.userInfoContainer{
+    height:200px;
+    background-color: #FFF;
+    margin-top:80px;
+}
+.userInfo2{
+    height:200px;
+    background-color: #FFF;
+    margin-top:10px;
+}
+.nav-right{
+    margin-left:14px;
+}
+.addArticle{
+    margin-top:70px;
+    height:50px;
+    background-color:#E2E2E2;
+    font-size:40px;
+}
+a:link {color: #2A2A2A;} /* 没访问过的链接样式 */
+a:visited {color:#060304;} /* 访问过的链接样式 */
+a:hover {color:#FFF;} /* 鼠标进入链接区域的链接样式 */
+a:active {color:#060304;} /* 点击链接时的链接样式 */
