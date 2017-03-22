@@ -8,6 +8,21 @@
   <name>shiyibuku Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+  <profiles>  
+  	<profile>  
+        <id>jdk-1.8</id>  
+        <activation>  
+            <activeByDefault>true</activeByDefault>  
+            <jdk>1.8</jdk>  
+        </activation>  
+        <properties>  
+            <maven.compiler.source>1.8</maven.compiler.source>  
+            <maven.compiler.target>1.8</maven.compiler.target>  
+            <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>  
+        </properties>  
+    </profile>
+  </profiles>
+
   <properties>
     <!--spring版本号-->
     <spring.version>4.2.4.RELEASE</spring.version>
