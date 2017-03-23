@@ -77,5 +77,10 @@
         </div>
     </div>
 </div>
+
+<script src="static/js/jquery-1.11.3.min.js"></script>
+<script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/js/js.cookie.js"></script>
+<script src="static/js/nav.js"></script>
 </body>
 </html>

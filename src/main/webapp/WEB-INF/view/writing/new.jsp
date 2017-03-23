@@ -45,6 +45,9 @@
 <script src="static/plugin/simditor/scripts/hotkeys.min.js"></script>
 <script src="static/plugin/simditor/scripts/uploader.min.js"></script>
 <script src="static/plugin/simditor/scripts/simditor.min.js"></script>
+<script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/js/js.cookie.js"></script>
+<script src="static/js/nav.js"></script>
 <script>
     var editor = new Simditor({
         textarea: $("#editor")
